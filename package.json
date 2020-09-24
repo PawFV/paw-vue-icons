@@ -39,7 +39,7 @@
   },
   "scripts": {
     "prebuild": "rm -rf dist/",
-    "build": "node build.js && cd dist && vue-cli-service build --target lib --name paw-vue-icons src/build/",
+    "build": "node build.js",
     "postbuild": "cp styles.css package.json README.md dist/",
     "format": "prettier --write **/*.{js,vue}",
     "test": "jest"
