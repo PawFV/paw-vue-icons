@@ -23,7 +23,7 @@ easier.
 2. Import the icon, and declare it as a local component:
 
    ```javascript
-   import MenuIcon from 'paw-vue-icons/Menu.vue';
+   import MenuIcon from 'paw-vue-icons/dist/Menu.vue';
 
    components: {
      MenuIcon;
@@ -35,7 +35,7 @@ easier.
    Declare it as a global component:
 
    ```javascript
-   import MenuIcon from 'paw-vue-icons/Menu.vue';
+   import MenuIcon from 'paw-vue-icons/dist/Menu.vue';
 
    Vue.component('menu-icon', MenuIcon);
    ```
