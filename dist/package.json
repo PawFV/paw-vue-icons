@@ -1,10 +1,13 @@
 {
-  "name": "vue-material-design-icons",
-  "version": "3.2.0",
-  "author": "Rob Cresswell <robcresswell@protonmail.com>",
+  "name": "paw-vue-icons",
+  "version": "1.0.1",
+  "author": "PawFV",
   "license": "MIT",
   "description": "A collection of material design icons as Vue single file components",
-  "repository": "github:robcresswell/vue-material-design-icons",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/robcresswell/vue-material-design-icons.git"
+  },
   "keywords": [
     "vue",
     "material design icons",
@@ -34,15 +37,13 @@
     "vue-jest": "^3.0.5",
     "vue-template-compiler": "^2.6.11"
   },
-  "homepage": "https://github.com/robcresswell/vue-material-design-icons",
-  "bugs": {
-    "url": "https://github.com/robcresswell/vue-material-design-icons/issues"
-  },
   "scripts": {
     "prebuild": "rm -rf dist/",
     "build": "node build.js",
     "postbuild": "cp styles.css package.json README.md dist/",
     "format": "prettier --write **/*.{js,vue}",
     "test": "jest"
-  }
+  },
+  "main": "build.js",
+  "dependencies": {}
 }

@@ -11,19 +11,19 @@ easier.
 1. Install the package
 
    ```console
-   yarn add vue-material-design-icons
+   yarn add paw-vue-icons
    ```
 
    **OR**
 
    ```console
-   npm i vue-material-design-icons
+   npm i paw-vue-icons
    ```
 
 2. Import the icon, and declare it as a local component:
 
    ```javascript
-   import MenuIcon from 'vue-material-design-icons/Menu.vue';
+   import MenuIcon from 'paw-vue-icons/Menu.vue';
 
    components: {
      MenuIcon;
@@ -35,7 +35,7 @@ easier.
    Declare it as a global component:
 
    ```javascript
-   import MenuIcon from 'vue-material-design-icons/Menu.vue';
+   import MenuIcon from 'paw-vue-icons/Menu.vue';
 
    Vue.component('menu-icon', MenuIcon);
    ```
@@ -55,7 +55,7 @@ easier.
    `size` prop, you probably don't want to use this as it may conflict.
 
    ```javascript
-   import 'vue-material-design-icons/styles.css';
+   import 'paw-vue-icons/styles.css';
    ```
 
 ## Props
@@ -107,7 +107,7 @@ A list of the icons can be found at the
 versions of the names displayed on the website, to match the
 [Vue Style Guide](https://vuejs.org/v2/style-guide/). For example, the icon
 named `ultra-high-definition` would be imported as
-`"vue-material-design-icons/UltraHighDefinition.vue"`.
+`"paw-vue-icons/UltraHighDefinition.vue"`.
 
 ## Tips
 
@@ -116,7 +116,7 @@ named `ultra-high-definition` would be imported as
   ```javascript
   resolve: {
     alias : {
-      "icons": path.resolve(__dirname, "node_modules/vue-material-design-icons")
+      "icons": path.resolve(__dirname, "node_modules/paw-vue-icons")
     },
     extensions: [
       ".vue"
@@ -126,7 +126,7 @@ named `ultra-high-definition` would be imported as
 
   This will give you much shorter and more readable imports, like
   `import Android from "icons/Android"`, rather than
-  `import Android from "vue-material-design-icons/Android.vue"`. Much better!
+  `import Android from "paw-vue-icons/Android.vue"`. Much better!
 
 - If you want custom sizing, add your own css to adjust the height and width of the icons
 
@@ -150,19 +150,3 @@ named `ultra-high-definition` would be imported as
 
   While I recommend using CSS for styling, you can also pass in a `size` prop,
   detailed in the `Props` section above.
-
-## Credits
-
-[Austin Andrews / Templarian](https://github.com/Templarian "Templarian's GitHub profile") for
-the [MaterialDesign](https://github.com/Templarian/MaterialDesign 'MaterialDesign Github page')
-project. This supplies the SVG icons for this project, which are packaged as
-Vue single file components.
-
-[Elliot Dahl](http://www.elliotdahl.com/ "Elliot Dahl's website") for
-[this article on prototypr.io](https://blog.prototypr.io/align-svg-icons-to-text-and-say-goodbye-to-font-icons-d44b3d7b26b4 'Align SVG Icons to Text and Say Goodbye to Font Icons'). This is where the
-recommended CSS comes from.
-
-[Attila Max Ruf / therufa](https://github.com/therufa "therufa's GitHub Profile")
-for the [mdi-vue](https://github.com/therufa/mdi-vue 'mdi-vue') library which
-inspired this one. It also produces single file components from material
-design icons.

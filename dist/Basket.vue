@@ -2,7 +2,7 @@
   <div :aria-hidden="props.decorative"
         :aria-label="props.title"
         :class="[data.class, data.staticClass]"
-        :style="{height: props.size + 'px'}"
+        :style="{height: props.size + 'px', display: 'inline-block'}"
         class="material-design-icon basket-icon"
         role="img"
         v-bind="data.attrs"
