@@ -11,19 +11,19 @@ easier.
 1. Install the package
 
    ```console
-   yarn add paw-material-icons
+   yarn add paw-vue-icons
    ```
 
    **OR**
 
    ```console
-   npm i paw-material-icons
+   npm i paw-vue-icons
    ```
 
 2. Import the icon, and declare it as a local component:
 
    ```javascript
-   import MenuIcon from 'paw-material-icons/Menu.vue';
+   import MenuIcon from 'paw-vue-icons/Menu.vue';
 
    components: {
      MenuIcon;
@@ -35,7 +35,7 @@ easier.
    Declare it as a global component:
 
    ```javascript
-   import MenuIcon from 'paw-material-icons/Menu.vue';
+   import MenuIcon from 'paw-vue-icons/Menu.vue';
 
    Vue.component('menu-icon', MenuIcon);
    ```
@@ -55,7 +55,7 @@ easier.
    `size` prop, you probably don't want to use this as it may conflict.
 
    ```javascript
-   import 'paw-material-icons/styles.css';
+   import 'paw-vue-icons/styles.css';
    ```
 
 ## Props
@@ -107,7 +107,7 @@ A list of the icons can be found at the
 versions of the names displayed on the website, to match the
 [Vue Style Guide](https://vuejs.org/v2/style-guide/). For example, the icon
 named `ultra-high-definition` would be imported as
-`"paw-material-icons/UltraHighDefinition.vue"`.
+`"paw-vue-icons/UltraHighDefinition.vue"`.
 
 ## Tips
 
@@ -116,7 +116,7 @@ named `ultra-high-definition` would be imported as
   ```javascript
   resolve: {
     alias : {
-      "icons": path.resolve(__dirname, "node_modules/paw-material-icons")
+      "icons": path.resolve(__dirname, "node_modules/paw-vue-icons")
     },
     extensions: [
       ".vue"
@@ -126,7 +126,7 @@ named `ultra-high-definition` would be imported as
 
   This will give you much shorter and more readable imports, like
   `import Android from "icons/Android"`, rather than
-  `import Android from "paw-material-icons/Android.vue"`. Much better!
+  `import Android from "paw-vue-icons/Android.vue"`. Much better!
 
 - If you want custom sizing, add your own css to adjust the height and width of the icons
 
