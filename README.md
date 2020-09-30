@@ -1,5 +1,9 @@
 # Vue Material Design Icon Components
 
+#### This is an extension of the original library made by [@robcresswell](https://github.com/robcresswell) and the link is [here](https://github.com/robcresswell/vue-material-design-icons#readme)
+
+##### I copied it to adapt it to my personal needs, if you want to provide support to make it better I'm open to collaborate. [Hit me up](https://github.com/PawFV/paw-vue-icons) with a PR
+
 This library is a collection of Vue single-file components to render Material
 Design Icons, sourced from the
 [MaterialDesign project](https://github.com/Templarian/MaterialDesign 'MaterialDesign Github page').
